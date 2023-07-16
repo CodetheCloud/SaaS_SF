@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="My LWC API CALLOUT">
+
+        <button class="slds-button slds-button_success" onclick={handleSubmit}> Callout Button </button>
+
+        
+
+        <template if:true={showMessage}>
+            <div> {status} </div>
+        </template>
+
+        <template if:true={showMessage}>
+            <img src={result} height="255" width="255">
+        </template>
+
+        <template if:true={loadingSpinner}>
+            <lightning-spinner alternative-text="Loading" variant="inverse" size="medium"></lightning-spinner>
+        </template>
+        
+
+    </lightning-card>
+</template>

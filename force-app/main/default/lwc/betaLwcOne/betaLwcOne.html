@@ -1,0 +1,23 @@
+<template>
+    
+ 
+   <lightning-card  title="Hello">
+
+     <lightning-input type="text" label="Principal Amount" onchange={getPrincipal}></lightning-input>
+     <lightning-input type="text" label="Rate of Intrest" onchange={getRate}></lightning-input>
+     <lightning-input type="text" label="Time Period" onchange={getTimePeriod}></lightning-input>
+
+     <button class="slds-button slds-button_neutral"  type="button" onclick={calc} value="Submit"> Submit </button>
+     <br/>
+     {p} <br/>
+     {r} <br/>
+     {t} <br/>
+     {res} <br/>
+
+     Current User Id = {currUserId}
+     
+     <c-beta-lwc-two> </c-beta-lwc-two>     
+   </lightning-card>
+
+
+</template>

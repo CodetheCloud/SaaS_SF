@@ -1,0 +1,8 @@
+<apex:page standardController="Doctor__c" extensions="Apr7th">    
+
+	<apex:form >
+        <apex:inputField value="{!Doctor__c.name}"/> <p/>
+        <apex:commandButton value="Save" action="{!save}"/>
+    </apex:form>   
+     
+</apex:page>

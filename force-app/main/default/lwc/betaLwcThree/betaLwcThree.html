@@ -1,0 +1,21 @@
+<template>
+
+
+    <lightning-card title="LWC Learning" icon-name="custom:custom19">
+
+        <ul class="slds-m-around_medium">
+            <template iterator:it={listOfCandidateinJS}>
+                <li key={it.value.Id} >
+                    <div lwc:if={it.first} class="color1"></div>  
+
+                    {it.value.Id}   {it.value.Name}  {it.value.City}
+
+                    <div lwc:if={it.last} class="color1"></div>
+                </li> 
+            </template> 
+        </ul> 
+
+    </lightning-card> 
+
+   
+</template>

@@ -1,0 +1,8 @@
+<apex:page controller="ApexClass">
+    
+     	<apex:form >
+    		<apex:commandButton action="{!calc}" value="Redirect to Google"/>
+    	</apex:form>
+    
+    
+</apex:page>

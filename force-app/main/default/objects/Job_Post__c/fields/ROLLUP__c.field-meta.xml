@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ROLLUP__c</fullName>
+    <externalId>false</externalId>
+    <label>ROLLUP</label>
+    <summarizedField>Posting__c.Total_Due__c</summarizedField>
+    <summaryForeignKey>Posting__c.Job_Post__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

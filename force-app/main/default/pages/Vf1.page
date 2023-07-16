@@ -1,0 +1,12 @@
+<apex:page title="Welcome" standardController="Account">
+ 
+    <apex:pageBlock title=" Account Details "> 
+        
+        {! Account.Name }  <br/>
+        {! Account.Phone }  <br/>
+        {! Account.Industry }  <br/>
+      
+
+    </apex:pageBlock>
+    
+</apex:page>

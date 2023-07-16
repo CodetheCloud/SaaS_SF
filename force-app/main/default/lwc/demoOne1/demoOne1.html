@@ -1,0 +1,31 @@
+<template>
+    
+    <lightning-card title="My LWC App">
+
+        <lightning-input type="text" label="Enter City Name" onchange={handleChange}> </lightning-input>
+
+        <button class="slds-button slds-button_success" onclick={handleSubmit}> Submit </button>
+
+        
+
+        
+        <template if:true={showMessage}>
+            <p> Details </p> 
+            <br/>
+           Base :  {base} <br/>
+           Humidity:  {humidity} <br/>
+           Min Temp:  {min} <br/>
+           Max Temp: {max} <br/>
+           Pressure:  {pressure} <br/>
+           Wind Speed: {wind} <br/>
+        </template>
+
+        <template if:true={loadingSpinner}>
+            <lightning-spinner alternative-text="Loading" variant="inverse" size="medium"></lightning-spinner>
+        </template>
+        
+
+    </lightning-card>
+
+
+</template>

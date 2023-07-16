@@ -1,0 +1,8 @@
+<apex:page controller="DemoVFcls">
+
+	<apex:form >
+        <apex:commandButton action="{!redirect}" value="Google"/>
+    </apex:form>
+    
+    
+</apex:page>

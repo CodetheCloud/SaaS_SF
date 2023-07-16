@@ -1,0 +1,19 @@
+<apex:page title="Dream IT Academy Beta Batch" >
+
+     <apex:includeLightning />
+  
+      <div id="LightningComponentid" /> 
+      <script> 
+      
+      $Lightning.use("c:mediumApp", function() {
+        $Lightning.createComponent("c:betaP1",
+          { 
+          },
+          "LightningComponentid",
+          function(cmp) {
+             console.log('LWC Componenet added in VF page');
+          });
+        });
+    
+      </script>
+</apex:page>

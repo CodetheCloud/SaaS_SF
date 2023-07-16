@@ -1,0 +1,20 @@
+<template>
+
+  
+    <div>
+      {name}
+      {age}
+      {city}
+    </div>
+  
+    
+    <img src={imageURL} length="250" width="250"> 
+
+    HIDE : <input type="checkbox" onchange={check} name="options" id="checkbox-unique-id-81" value="checkbox-unique-id-81" checked="" />
+
+
+    <template if:true={showIt}>
+              <lightning-input type="text" label="Provide Your Input" onchange={abc}></lightning-input>
+    </template>
+
+  </template>

@@ -1,0 +1,25 @@
+<template>
+    <div>
+        Welcome to Child.  <br/>
+        
+            <div>
+                <div class="slds-box">
+                <div class="slds-p-around_medium">{myMessage}</div>
+                <div class="slds-p-around_medium">{myName}</div>
+                </div>
+
+            </div>
+
+
+            <div class="slds-form-element">
+                <button class="slds-button slds-button_brand" onclick={handleClick}>Submit Button</button>
+            </div>
+
+
+            <template if:true={cons}>
+                <template for:each={cons} for:item="acc">
+                    <p key={acc.Id}>{acc.Name}</p>
+                </template> 
+            </template> 
+    </div> 
+</template>

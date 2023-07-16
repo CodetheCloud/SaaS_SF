@@ -1,0 +1,12 @@
+<template>
+    <div>
+        <button label = "Call" class="slds-button slds-button_brand" onclick={handleREST}>Call</button>
+        
+        <template if:true={showRes}>
+            <div class="slds-m-vertical_medium">
+                {myRes}
+            </div>
+        </template>
+        
+    </div> 
+</template>

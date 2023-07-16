@@ -1,0 +1,7 @@
+<apex:page controller="MyVF1Controller">
+  
+     <apex:form > 
+        <apex:commandButton value="Open Docs" action="{!pageRef}"/>
+    </apex:form>
+    
+</apex:page>

@@ -1,0 +1,7 @@
+<apex:page title="Welcome" controller="VFCalc">
+    
+    <apex:form >
+            <apex:commandButton action="{!callLogin}" value="login" />
+    </apex:form>	
+
+</apex:page>

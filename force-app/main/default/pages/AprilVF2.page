@@ -1,0 +1,41 @@
+<apex:page controller="CustLogicVF2">
+	
+    <script>
+    
+    function myvalidation(){
+        var text1 = document.getElementById('{!$Component.theForm.thePageBlock.mynum1}').value;
+       var text2 = document.getElementById('{!$Component.theForm.thePageBlock.mynum2}').value;
+        var text3 = document.getElementById('{!$Component.theForm.thePageBlock.mynum3}').value;
+
+        if(text1 == null || text1 == ''){
+            alert('num1 is null');
+            
+        }else if(text2 == null || text2 == ''){
+            alert('num2 is null');
+            
+        }
+       else if(text3 == null || text3 == ''){
+            alert('num3 is null');
+            
+        }
+        else{
+            
+            alert('All Good');
+        }
+     }
+    
+    </script>
+     
+    <apex:form id="theForm"> 
+        <apex:pageBlock id="thePageBlock" title="Test Validation">
+            Number 1 : <apex:inputText id="mynum1" value="{!num1}" />  <br/>
+            Number 2 : <apex:inputText id="mynum2" value="{!num2}" /> <br/>
+            Number 3 : <apex:inputText id="mynum3" value="{!num3}" /> <br/>
+            <apex:commandButton value="Submit It Now" action="{!functionWork1}" /> <br/>
+            <input type="button" value="Validate" onclick="myvalidation();" />
+        </apex:pageBlock>
+        Result (SI) : {!si} 
+    </apex:form>
+    
+    
+</apex:page>

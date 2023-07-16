@@ -1,0 +1,48 @@
+<template>
+
+    <div class="slds-card">
+        <div class="slds-p-around_medium">
+
+          
+            <label class="slds-form-element__label" for="text-input-id-1">
+              <abbr class="slds-required" title="required">* </abbr>Name</label>
+            <div class="slds-form-element__control">
+              <input name= "n1" type="text" id="text-input-id-1" placeholder="Placeholder text…" required="" class="slds-input" onchange={handleRun} />
+            </div>
+         
+
+
+          
+            <label class="slds-form-element__label" for="text-input-id-2">
+              <abbr class="slds-required" title="required">* </abbr>City</label>
+            <div class="slds-form-element__control">
+              <input name= "c1" type="text" id="text-input-id-2" placeholder="Placeholder text…" required="" class="slds-input" onchange={handleRun} />
+            </div>
+          
+
+          
+            <label class="slds-form-element__label" for="text-input-id-3">
+              <abbr class="slds-required" title="required">* </abbr>Country</label>
+            <div class="slds-form-element__control">
+              <input name= "c2" type="text" id="text-input-id-3" placeholder="Placeholder text…" required="" class="slds-input" onchange={handleRun}/>
+            </div>
+          
+
+          
+            <label class="slds-form-element__label" for="text-input-id-4">
+              <abbr class="slds-required" title="required">* </abbr>Email</label>
+            <div class="slds-form-element__control">
+              <input name= "e1" type="text" id="text-input-id-4" placeholder="Placeholder text…" required="" class="slds-input" onchange={handleRun}/>
+            </div>
+          
+        
+          <br/>
+          Name: {name}  <br/>
+          city : {city} <br/>
+          country : {country} <br/>
+          email : {email} <br/>
+        </div>
+    </div>
+    
+
+</template>

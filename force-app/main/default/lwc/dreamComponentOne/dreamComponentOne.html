@@ -1,0 +1,25 @@
+<template>
+    <div class="slds-box slds-theme_default">
+
+        <h1>Hello : {name}  </h1> 
+        <h1>City : {city}  </h1>
+        
+        <label class="slds-form-element__label" for="text-input-id-47">
+            <abbr class="slds-required" title="required">* </abbr> 
+            {localVarmyName}
+        </label>
+
+        <input type="text" name="nameval" id="text-input-id-47" required="" class="slds-input" onchange={handleChange} />
+
+        <br/><br/>
+
+
+        <lightning-input type="text" name="cityval" label="City" onchange={handleChange}></lightning-input>
+
+        <br/><br/>
+        <lightning-button variant="Brand" label="Submit" title="Submit" onclick={handleSubmit} class="slds-m-left_x-small"></lightning-button>
+    </div> 
+    
+    
+
+</template>

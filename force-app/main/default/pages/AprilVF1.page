@@ -1,0 +1,9 @@
+<apex:page title="VF Page" standardController="Account" >
+    <apex:pageBlock >
+        <p> {! Account.name }  </p>
+        <p> {! Account.Industry }  </p>
+        <p> {! Account.OwnerId }  </p>
+         <p> {!Account.owner.name} </p>
+
+    </apex:pageBlock>
+</apex:page>

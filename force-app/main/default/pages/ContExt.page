@@ -1,0 +1,10 @@
+<apex:page standardController="Account" extensions="myControllerExtension" >
+    
+    <apex:form >
+    	{!greeting} <!-- this expressiion will look for getGreeting() -->
+    	<apex:inputField value="{!account.name}"/> <p/>
+        <apex:commandButton value="Save" action="{!save}"/>
+        
+    </apex:form>
+    
+</apex:page>

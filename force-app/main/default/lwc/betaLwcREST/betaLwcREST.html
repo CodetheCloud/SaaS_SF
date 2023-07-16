@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Apex">
+
+        <p> 
+            <lightning-input type="text" label="Enter some text" onchange={handleChange}></lightning-input>
+        </p>
+        
+
+        <p> 
+            <lightning-button label="Submit" onclick={handleMethod}> </lightning-button>
+        </p> 
+       
+      
+
+       <template if:true={accs}>
+            <template for:each={accs} for:item="accrec">
+                <p key={accrec.Id}> {accrec.Name} {accrec.Email__c} </p> 
+            </template>
+       </template> 
+
+
+    </lightning-card> 
+</template>

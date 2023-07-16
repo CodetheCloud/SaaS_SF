@@ -1,0 +1,8 @@
+<apex:page title="My VF Page" standardController="Account">
+
+
+ 	{! Account.Name } 
+  	{! Account.Phone }   
+    
+    
+</apex:page>
